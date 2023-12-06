@@ -1,0 +1,9 @@
+lambda cond : Bool . if cond then suc else pred endif end
+lambda num : Nat . lambda cond : Bool . ehzero end end
+( suc1)
+lambda teste : Bool . teste end true
+( lambda b : Bool . b end 1 )
+( suc livre )
+( lambda x : ( Nat -> Nat ) . ( lambda x : Nat . x end ( x 1 ) ) end pred )
+( if true then suc else pred endif if true then true else false endif )
+endif
