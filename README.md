@@ -1,7 +1,8 @@
 # Semantic-Analyzer
 
-This is a program to evaluate the type of an expression defined by the following grammar:
+This is a program to evaluate the type of a simply typed lambda calculus expression defined by the following grammar:
 
+```bnf
 <expressão>       ::= <termo> | <expressão>
 
 <termo>           ::= true
@@ -34,3 +35,9 @@ This is a program to evaluate the type of an expression defined by the following
 <alfa-num>       ::= <letra> | <dígito>
 
 <tipo>           ::= Bool | Nat | ( <tipo> -> <tipo> )
+```
+
+Example:
+
+```lambda x : Nat . x end``` is an expression for the identity function whose type is ( Nat -> Nat )
+and ```( lambda x : Nat . x end 1 )``` reduces to Nat
